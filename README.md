@@ -1,2 +1,0 @@
-# Supermart
-# Author - shubham
