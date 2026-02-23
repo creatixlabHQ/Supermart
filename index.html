@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>SuperMart Login</title>
-</head>
-<body style="font-family: Arial; text-align:center; margin-top:100px;">
-
-  <h2>SuperMart Panel Login</h2>
-
-  <input type="email" id="email" placeholder="Enter email"><br><br>
-
-  <button onclick="login()">Login as Restaurant</button>
-
+<script src="config/config.js"></script>
 <script>
-function login() {
-  const email = document.getElementById("email").value;
-
-  if(!email){
-    alert("Enter email first");
-    return;
-  }
-
-  localStorage.setItem("userEmail", email);
-
-  // IMPORTANT: path yaha se start hoga
-  window.location.href = "restaurant/dashboard.html";
-}
+  console.log(CONFIG.APP_NAME);
 </script>
-
-</body>
-</html>
